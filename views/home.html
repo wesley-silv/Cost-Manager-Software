@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,3 +22,92 @@
   </form>
 </body>
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../styles/insert.css">
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
+    <title>Insert registers</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const openMenu = document.getElementById('open-menu')
+        const closeMenu = document.getElementById('close-menu')
+        const listMenu = document.getElementById('list-menu')
+
+        openMenu.addEventListener('click', function () {
+          listMenu.style.display =
+            listMenu.style.display === 'block' ? 'none' : 'block'
+          openMenu.style.display = 'none'
+          closeMenu.style.display = 'block'
+        })
+
+        closeMenu.addEventListener('click', function () {
+          listMenu.style.display =
+            listMenu.style.display === 'none' ? 'block' : 'none'
+          openMenu.style.display = 'block'
+          closeMenu.style.display = 'none'
+        })
+      })
+
+      function callingRouteApi(rota) {
+        window.location.href = rota
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container-menu">
+      <i class="bi bi-list" id="open-menu" title="open menu"> </i>
+      <i class="bi bi-x" id="close-menu" title="close menu"> </i>
+      <ul id="list-menu">
+        <li onclick="callingRouteApi('/api/home')">Home</li>
+        <li onclick="callingRouteApi('/api/insert')">Insert</li>
+        <li onclick="callingRouteApi('/api/list')">List</li>
+        <li onclick="callingRouteApi('/api/update')">Update</li>
+        <li onclick="callingRouteApi('/api/delete')">Delete</li>
+      </ul>
+    </div>
+    <h1>Insert registers</h1>
+    <form action="/insert-dates" method="POST">
+      <label for="Content">Content</label>
+      <input
+        type="text"
+        name="Content"
+        id=""
+        required
+        placeholder="Insert your content"
+      />
+      <label for="Description">Description</label>
+      <input
+        type="text"
+        name="Description"
+        id=""
+        required
+        placeholder="Insert your description"
+      />
+      <label for="Stack">Stack</label>
+      <input
+        type="text"
+        name="Stack"
+        id=""
+        required
+        placeholder="Insert your stack"
+      />
+      <label for="Project">Project</label>
+      <input
+        type="text"
+        name="Project"
+        id=""
+        required
+        placeholder="Insert your project"
+      />
+      <label for="Time_studies">Time studies</label>
+      <input type="time" name="Time_studies" id="time-studies" required />
+      <label for="Date_studies">Date studies</label>
+      <input type="date" name="Date_studies" id="date-studies" required />
+      <button type="submit" title="Toque para cadastrar os registros">
+        Register
+      </button>
+    </form>
+  </body>
+>>>>>>> 3ca3b72f0826d1abdd235d14b09cc46a8207fc96
