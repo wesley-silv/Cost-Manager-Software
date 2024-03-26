@@ -1,0 +1,9 @@
+.navbar, .container-fluid {
+  background-color: #5db2e0;
+}
+
+.navbar-brand {
+  color: #000080;
+  font-weight: bold;
+  font-style: italic;
+}
