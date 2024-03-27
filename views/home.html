@@ -51,31 +51,19 @@
     <h1 class="page-title">Cost Manager Software</h1>
     <form id="costs-form" action="/insert-dates" method="POST">
       <h4>Costs fixed</h4>
-      <select
-        class="form-select"
-        name="costs_fixed"
-        aria-label="Default select example"
-      >
-        <option selected disabled>Select an option</option>
-        <option value="water">Water</option>
-        <option value="eletric-energy">Electric Energy</option>
-        <option value="gas">Gas</option>
-        <option value="alimentation">Alimentation</option>
-        <option value="rent">Rent</option>
-      </select>
-      <hr />
-      <h4>Costs not fixed</h4>
-      <select
-        class="form-select"
-        name="costs_not_fixed"
-        aria-label="Default select example"
-      >
-        <option selected disabled>Select an option</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
 
+      <label for="">Water</label>
+      <input type="number" name="water" id="water" />
+      <label for="">Eletric energy</label>
+      <input type="number" name="eletric-energy" id="eletric-energy" />
+      <label for="">Cook gas</label>
+      <input type="number" name="cook-gas" id="cook-gas" />
+      <label for="">Food</label>
+      <input type="number" name="food" id="food" />
+      <label for="">Clean products</label>
+      <input type="number" name="clean-products" id="clean-products" />
+      <label for="">Others</label>
+      <input type="number" name="others" id="others" />
       <button class="but-form-submit" type="submit" title="Toch to register">
         Register
       </button>

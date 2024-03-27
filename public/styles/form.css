@@ -6,13 +6,23 @@
   text-shadow: 4px 5px 5px #c0c0c0;
   font-weight: bold;
 }
-form {
+#costs-form {
   width: 85%;
   margin: 3em auto;
   padding: 2em;
   background-color: #d8e0e1;
-  box-shadow: 2px 4px 7px #5db2e0;
+  border: solid #5db2e0;
+  box-shadow: 2px 4px 7px #c0c0c0;
 }
+#water, #eletric-energy, #cook-gas, #food, #clean-products, #others {
+  display: block;
+  font-size: 18px;
+  margin: 4px 0;
+}
+.costs-form input {
+  width: 18%;
+}
+
 
 .but-form-submit {
   width: 180px;
