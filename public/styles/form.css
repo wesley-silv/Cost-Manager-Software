@@ -19,10 +19,12 @@
   font-size: 18px;
   margin: 4px 0;
 }
+.costs-form label {
+  font-weight: bold;
+}
 .costs-form input {
   width: 18%;
 }
-
 
 .but-form-submit {
   width: 180px;
